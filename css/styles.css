@@ -50,7 +50,8 @@ h1 {
   margin-bottom: 20px; }
 
 form {
-  overflow: overlay; }
+  overflow: overlay;
+  margin-top: 30px; }
 
 label {
   display: inline-block;
@@ -160,8 +161,7 @@ input::-moz-focus-outer {
   background: #fff;
   letter-spacing: 2px;
   transition: all ease-in 0.3s;
-  border: 1px solid #bdcce6;
-  overflow: hidden; }
+  border: 1px solid #bdcce6; }
   .password-box .password {
     width: 70%;
     padding: 1.5em 1em;
@@ -206,14 +206,14 @@ input::-moz-focus-outer {
 
 .tooltip {
   font-size: 0.8em;
+  display: block;
   text-align: center;
   padding: 0.5em;
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
   border-radius: 3px;
-  border: 1px solid #868ef8; }
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%); }
 
 .seperator {
   width: 100%;

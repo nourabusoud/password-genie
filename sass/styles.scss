@@ -73,6 +73,7 @@ h1{
 
 form{
   overflow: overlay;
+  margin-top: 30px;
 }
 
 label{
@@ -165,51 +166,6 @@ input::-moz-focus-outer {
 
 
 .slider{
-  // &-purple{
-  //   .range-slider{
-  //     background-color: lighten($purple, 20%);
-  //   }
-  //   .slider-bar, .slider-bar:after{
-  //     background-color: $purple;
-  //   }
-  //   .range-slider::-webkit-slider-thumb{
-  //     background-color: darken($purple, 5%);
-  //   }
-  //   .range-slider::-moz-range-thumb{
-  //     background-color: darken($purple, 5%);
-  //   }
-  // } 
-
-  // &-blue{
-  //   .range-slider{
-  //     background-color: lighten($blue, 20%);
-  //   }
-  //   .slider-bar, .slider-bar:after{
-  //     background-color: $blue;
-  //   }
-  //   .range-slider::-webkit-slider-thumb{
-  //     background-color: darken($blue, 5%);
-  //   }
-  //   .range-slider::-moz-range-thumb{
-  //     background-color: darken($blue, 5%);
-  //   }
-  // } 
-
-  // &-green{
-  //   .range-slider{
-  //     background-color: lighten($green, 20%);
-  //   }
-  //   .slider-bar, .slider-bar:after{
-  //     background-color: $green;
-  //   }
-  //   .range-slider::-webkit-slider-thumb{
-  //     background-color: darken($green, 5%);
-  //   }
-  //   .range-slider::-moz-range-thumb{
-  //     background-color: darken($green, 5%);
-  //   }
-  // } 
-
   &-strength{
     .range-slider{
       cursor: default;
@@ -276,7 +232,6 @@ input::-moz-focus-outer {
   letter-spacing: 2px;
   transition: all ease-in 0.3s;
   border: 1px solid rgb(189, 204, 230);
-  overflow: hidden;
 
   .password{
     width: 70%;
@@ -334,14 +289,14 @@ input::-moz-focus-outer {
 
 .tooltip{
   font-size: 0.8em;
+  display: block;
   text-align: center;
   padding: 0.5em;
+  border-radius: 3px;
   position: absolute;
-  bottom: 20px;
+  bottom: -35px;
   left: 50%;
   transform: translateX(-50%);
-  border-radius: 3px;
-  border: 1px solid #868ef8;
 }
 
 .seperator{

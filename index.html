@@ -4,8 +4,7 @@
   <title>The Password Genie</title>    
   <meta name="viewport" content="width=device-width" />
   <link rel="icon" href="images/favicon.png" sizes="32x32">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,100,700,100italic,300italic,400italic">
+  <link rel="stylesheet" type="text/css" href="css/styles.css?1">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -28,6 +27,7 @@
         <span id="password" class="password" v-on:click="copyToClipboard">{{ password }}</span>
         <span class="regenerate-password" v-on:click="generatePassword"></span>
         <span class="copy-password" v-on:click="copyToClipboard"></span>
+        <span class="tooltip" v-if="copied">Password copied successfuly!</span>
       </div>
       <form @keydown.enter.prevent="">
         <div class="field-wrap">
@@ -64,7 +64,6 @@
           </div>  
         </div>
       </form>
-      <span class="tooltip" v-if="copied">Password copied successfuly!</span>
     </section>
   </div>
   <footer>
