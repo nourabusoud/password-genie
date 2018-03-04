@@ -4,7 +4,7 @@
   <title>The Password Genie</title>    
   <meta name="viewport" content="width=device-width" />
   <link rel="icon" href="images/favicon.png" sizes="32x32">
-  <link rel="stylesheet" type="text/css" href="css/styles.css?1">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -201,6 +201,7 @@ new Vue({
       // we should create a textarea, put the password inside it, select it and finally copy it
       var copyElement = document.createElement("textarea");
       copyElement.style.opacity = '0';
+      copyElement.style.position = 'fixed';
       copyElement.textContent = this.password;
       var body = document.getElementsByTagName('body')[0];
       body.appendChild(copyElement);

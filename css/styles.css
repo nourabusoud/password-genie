@@ -78,6 +78,7 @@ label {
   -webkit-appearance: none;
   appearance: none;
   border-radius: 0;
+  border: 0;
   position: relative;
   width: 4px;
   height: 15px;
@@ -87,6 +88,7 @@ label {
   -moz-appearance: none;
   appearance: none;
   border-radius: 0;
+  border: 0;
   position: relative;
   width: 4px;
   height: 15px;
