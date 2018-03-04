@@ -200,14 +200,13 @@ new Vue({
     copyToClipboard(){
       // we should create a textarea, put the password inside it, select it and finally copy it
       var copyElement = document.createElement("textarea");
-      copyElement.style.opacity = '0';
-      copyElement.style.position = 'fixed';
+      copyElement.style.display = 'none';
       copyElement.textContent = this.password;
       var body = document.getElementsByTagName('body')[0];
       body.appendChild(copyElement);
       copyElement.select();
       document.execCommand('copy');
-      body.removeChild(copyElement);
+      //body.removeChild(copyElement);
       
       this.copied = true;
       // reset this.copied
