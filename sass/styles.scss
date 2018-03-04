@@ -324,6 +324,7 @@ footer a{
   margin-bottom: 30px;
 }
 
-textarea{
+// fix for copy text
+textarea, textarea:focus{
   font-size: 16px;
 }
